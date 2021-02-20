@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gymoholic</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+ 
+        body{
+
+            /* margin: 0px;
+            padding: 0px; */
+            background-image: url('amanback.jpg');
+            background-size: cover;
+            background-position: center; 
+            height: 100px;
+            /* width: 100px; */ 
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+        .left{
+            position:absolute;
+            left:31px;
+            top:29px;
+            display: inline-block;
+            color: aliceblue;
+            /* border: 2px solid red; */
+        }
+        .left img{
+            width: 100px;
+            margin-top: 0px;
+            
+        }
+        .left div{
+            text-align: center;
+            font-size: 15px;
+        }
+        .mid{
+            display: block;
+            width:50%;
+            margin: 39px auto;
+            margin-left: 378px;
+            color: aliceblue;
+            /* border: 2px solid yellow; */
+        }
+        .right{
+            position:absolute;
+            right: 40px;
+            top:40px;
+            display: inline-block;
+            color: aliceblue;
+            /* border: 2px solid green; */
+        }
+        .navibar{
+            /* list-style: none; */
+            display: inline-block;
+            list-style: none;
+            
+
+        }
+        .navibar li{
+            display: inline-block;
+            margin: 0px;
+            margin-left: 23px;
+            padding: 28px;
+            margin-right: -12px;
+            font-size: 19px;
+            
+        }
+        .navibar a{
+            text-decoration: none;
+            color: beige;
+        }
+        .navibar a:hover{
+            color: rgb(126, 121, 119);
+        }
+        .navibar a:active{
+            color: rgb(189, 30, 30);
+            text-decoration: underline;
+        }
+        
+        .btn{
+            background-color: rgba(155, 151, 151, 0.829);
+            color: black;
+            font-weight: bold;
+            /* border:1px solid black; */
+            border-radius: 16px;
+            cursor: pointer;
+            padding: 4px;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+        .btn:hover{
+            background-color: black;
+            color: white;
+        }
+        #searchh{
+            border-radius: 16px;
+        }
+       
+        .container{
+            /* border: 2px solid greenyellow; */
+            margin: 106px 80px;
+            /* padding:75px; */
+            width: 86%;
+            color: white;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+        .font_group input{
+            text-align: center;
+            width: 30%;
+            margin: 25px;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: 'IBM Plex Sans', sans-serif;
+           
+        }
+        .btn2{
+            padding: 8px 33px;
+            margin: 8px 55px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            cursor: pointer;
+            background-color: rgba(155, 151, 151, 0.829);
+            color: black;
+            font-weight: bold;
+            border:1px solid black;
+            border-radius: 16px;
+            
+
+        }
+        h1{
+            margin: 21px 126px;
+            color: rgb(255, 255, 255);
+            background-color: black;
+            display: inline-block;
+            border: 3px solid white;
+            border-radius: 10px;
+            padding: 3px 5px;
+        }
+        .font_group,h1{
+            /* border: 2px solid greenyellow; */
+        }
+        
+        
+      
+    </style>
+</head>
+<body>
+ <header class="game">
+     <div class="left">
+          <img src="gym icon1.jpg" alt="">
+          <div>Gym Mania</div>
+     </div>
+     <div class="mid">
+         <!-- box for navigation -->
+         <ul class="navibar">
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About Us</a></li>
+             <li><a href="#">Why join?</a></li>
+             <li><a href="#">Gym Supplements</a></li>
+
+
+         </ul>
+     </div>
+     <div class="right">
+         
+        <input type="text" name="Search Here!" id="searchh" placeholder =" Search this website ">
+        <button class="btn">search</button>
+        <!-- box for search/action -->
+     </div>
+    </header>
+     <div class="container">
+         <!-- I am a container for form -->
+
+         <h1>Register Here</h1>
+        <form action="noaction.php">
+            <div class="font_group">
+             <input type="text" name="myfirstname" placeholder="Enter your  First Name">
+
+        </div>
+        <div class="font_group">
+            <input type="text" name="mylastname"  placeholder="Enter your  Last Name">
+            
+       </div>
+       <div class="font_group">
+                 <input type="number" name="myphonenumber"  placeholder="Enter your phone number ">
+        
+   </div>
+   <div class="font_group">
+    <input type="number" name="mynumber" placeholder="Enter your age">
+    
+</div>
+<div class="font_group">
+    <input type="email" name="myemail" placeholder="Enter your email">
+    
+</div>
+
+<button class="btn2">Submit</button><button class="btn2">reset</button>
+        </form>
+
+
+     </div>
+
+
+</body>
+</html>
